@@ -41,7 +41,7 @@ const FactsSection = () => {
                             >
                                 <i className={fact.icon} style={{ fontSize: '60px', color: '#FDBE33', marginBottom: '20px', display: 'block' }}></i>
                                 <div className="facts-text">
-                                    <h2 data-toggle="counter-up" style={{ color: '#fff', fontSize: '45px', fontWeight: '700', marginBottom: '5px' }}>{fact.count}</h2>
+                                    <h2 data-toggle="counter-up" style={{ color: 'var(--primary)', fontSize: '64px', fontWeight: '800', marginBottom: '5px' }}>{fact.count}</h2>
                                     <p style={{ fontSize: '18px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>{fact.title}</p>
                                 </div>
                             </motion.div>

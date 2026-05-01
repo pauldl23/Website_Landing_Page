@@ -5,7 +5,7 @@
     --light: #f8f9fa;
     --text: #777777;
     --section-padding: 100px 0;
-    
+
     /* 2026 Organic Gradients */
     --grad-organic: linear-gradient(135deg, rgba(253, 190, 51, 0.1) 0%, rgba(74, 76, 112, 0.05) 100%);
     --grad-premium: linear-gradient(to right, #FDBE33, #ffcc5c);
@@ -29,10 +29,10 @@ body {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
     color: var(--secondary);
     font-weight: 700;
@@ -52,7 +52,7 @@ a:hover {
 /* Micro-interactions for Buttons */
 .btn.btn-custom {
     padding: 14px 34px;
-    text-align: center; 
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
     color: var(--dark);
@@ -78,11 +78,17 @@ a:hover {
 }
 
 .container-fluid {
-    max-width: 1366px;
+    max-width: 1440px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+.carousel .container-fluid {
+    max-width: none;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
     font-size: inherit;
     margin-left: 0;
 }
@@ -129,13 +135,23 @@ a:hover {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .back-to-top {
@@ -317,17 +333,17 @@ a:hover {
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         z-index: 9;
     }
-    
+
     .navbar.nav-sticky {
         padding: 10px 60px;
         background: #20212B !important;
         border-bottom: none;
     }
-    
+
     .page .navbar {
         background: #20212B !important;
     }
-    
+
     .navbar a.nav-link {
         padding: 8px 15px;
         font-size: 16px;
@@ -335,16 +351,16 @@ a:hover {
     }
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 991.98px) {
     .navbar {
         padding: 15px;
         background: #20212B !important;
     }
-    
+
     .navbar a.nav-link {
         padding: 5px;
     }
-    
+
     .navbar .dropdown-menu {
         box-shadow: none;
     }
@@ -507,11 +523,11 @@ a:hover {
     .carousel .carousel-text h1 {
         font-size: 35px;
     }
-    
+
     .carousel .carousel-text p {
         font-size: 16px;
     }
-    
+
     .carousel .carousel-text .btn {
         padding: 12px 30px;
         font-size: 15px;
@@ -523,7 +539,7 @@ a:hover {
     .carousel .carousel-text h1 {
         font-size: 30px;
     }
-    
+
     .carousel .carousel-text .btn {
         padding: 10px 25px;
         font-size: 15px;
@@ -535,7 +551,7 @@ a:hover {
     .carousel .carousel-text h1 {
         font-size: 25px;
     }
-    
+
     .carousel .carousel-text .btn {
         padding: 8px 20px;
         font-size: 14px;
@@ -608,11 +624,11 @@ a:hover {
     .page-header {
         padding: 60px 0;
     }
-    
+
     .page-header h2 {
         font-size: 45px;
     }
-    
+
     .page-header a {
         font-size: 20px;
     }
@@ -622,11 +638,11 @@ a:hover {
     .page-header {
         padding: 45px 0;
     }
-    
+
     .page-header h2 {
         font-size: 35px;
     }
-    
+
     .page-header a {
         font-size: 18px;
     }
@@ -691,7 +707,7 @@ a:hover {
 .organic-blob {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -795,7 +811,7 @@ a:hover {
 .service .service-item:hover {
     transform: translateY(-12px) scale(1.02);
     background: #fff;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
     border-color: var(--primary);
 }
 
@@ -1091,12 +1107,13 @@ a:hover {
     padding-left: 20px;
 }
 
-.facts .facts-text h3 {
+.facts .facts-text h2 {
     position: relative;
     display: inline-block;
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: 700;
+    color: var(--primary);
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 5px;
 }
 
 .facts .facts-text h3::after {
@@ -1309,7 +1326,8 @@ a:hover {
 }
 
 .volunteer .volunteer-content .section-header h2 {
-    color: #ffffff;
+    color: var(--secondary);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .volunteer .volunteer-text p {
@@ -1457,29 +1475,29 @@ a:hover {
     .event .event-content {
         flex-direction: column;
     }
-    
+
     .event .event-meta {
         flex-direction: row;
     }
-    
+
     .event .event-meta p {
         font-size: 14px;
         padding-right: 7px;
     }
-    
+
     .event .event-meta p:last-child {
         border-bottom: 1px solid rgba(0, 0, 0, .15);
     }
-    
+
     .event .event-meta i {
         width: 18px;
     }
-    
+
     .event .event-text {
         margin: 0;
         padding: 0;
     }
-    
+
     .event .event-text::before,
     .event .event-text::after {
         display: none;
@@ -2028,11 +2046,11 @@ a:hover {
 }
 
 .sidebar .category-widget ul li {
-    margin: 0 0 12px 22px; 
+    margin: 0 0 12px 22px;
 }
 
 .sidebar .category-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar .category-widget ul li a {
@@ -2107,14 +2125,16 @@ a:hover {
     position: relative;
     margin-bottom: 45px;
     color: #ffffff;
-    font-size: 12px; /* Smaller font size */
+    font-size: 12px;
+    /* Smaller font size */
 }
 
 .footer .footer-contact h2,
 .footer .footer-link h2,
 .footer .footer-newsletter h2 {
     margin-bottom: 30px;
-    font-size: 18px; /* Smaller heading size */
+    font-size: 18px;
+    /* Smaller heading size */
     font-weight: 700;
     color: #FDBE33;
 }
@@ -2124,7 +2144,8 @@ a:hover {
     margin-bottom: 10px;
     color: #ffffff;
     transition: .3s;
-    font-size: 12px; /* Smaller link font size */
+    font-size: 12px;
+    /* Smaller link font size */
 }
 
 .footer .footer-link a::before {
@@ -2133,7 +2154,8 @@ a:hover {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-    font-size: 10px; /* Adjust icon size if needed */
+    font-size: 10px;
+    /* Adjust icon size if needed */
 }
 
 .footer .footer-link a:hover {
@@ -2150,14 +2172,16 @@ a:hover {
     margin-top: 20px;
 }
 
-.footer .footer-social a {
-    width: 40px;
-    height: 40px;
-    padding: 6px 0;
-}
-
-.footer .footer-social a {
+.footer .footer-social a.btn.btn-custom {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin-right: 10px;
     margin-top: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
 }
 
 .footer .footer-newsletter form {
@@ -2170,13 +2194,15 @@ a:hover {
     height: 60px;
     border: none;
     border-radius: 0;
-    font-size: 12px; /* Smaller input font size */
+    font-size: 12px;
+    /* Smaller input font size */
 }
 
 .footer .footer-newsletter label {
     margin-top: 5px;
     color: #777777;
-    font-size: 12px; /* Smaller label font size */
+    font-size: 12px;
+    /* Smaller label font size */
     letter-spacing: 1px;
 }
 
@@ -2198,7 +2224,8 @@ a:hover {
 .footer .copyright p {
     margin: 0;
     color: #999999;
-    font-size: 12px; /* Smaller copyright font size */
+    font-size: 12px;
+    /* Smaller copyright font size */
 }
 
 .footer .copyright .col-md-6:last-child p {
@@ -2214,6 +2241,7 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;

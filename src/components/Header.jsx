@@ -99,15 +99,27 @@ const Header = () => {
                         width: 0;
                         height: 2px;
                         bottom: 0;
-                        left: 15px;
+                        left: 50%;
                         background: var(--primary);
-                        transition: width 0.3s ease;
+                        transition: all 0.3s ease;
+                        transform: translateX(-50%);
                     }
                     .nav-link.active::after {
-                        width: calc(100% - 30px);
+                        width: 80%;
                     }
                     .nav-link:hover::after {
-                        width: calc(100% - 30px);
+                        width: 80%;
+                    }
+                    .dropdown-toggle::after {
+                        margin-left: 8px;
+                        vertical-align: middle;
+                        border-top: .4em solid;
+                        border-right: .4em solid transparent;
+                        border-left: .4em solid transparent;
+                    }
+                    /* Prevent underline overlap on dropdown */
+                    .nav-item.dropdown .nav-link::after {
+                        bottom: -5px;
                     }
                     .nav-sticky {
                         background: rgba(32, 33, 43, 0.95) !important;

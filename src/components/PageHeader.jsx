@@ -7,7 +7,7 @@ const PageHeader = ({ title, path }) => {
             backgroundImage: 'linear-gradient(rgba(32, 33, 43, 0.7), rgba(32, 33, 43, 0.7)), url(/img/page-header.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            padding: '90px 0',
+            padding: '160px 0 90px 0',
             textAlign: 'center',
             marginBottom: '60px'
         }}>
