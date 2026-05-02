@@ -6,25 +6,25 @@ const ArchivesSection = () => {
         {
             title: "Philippines-Palestine Friendship Association",
             desc: "A network promotes solidarity between the people of Palestine and the Philippines, actively advocating for their rights.",
-            img: "/img/FreeP.png",
+            img: `${import.meta.env.BASE_URL}img/FreeP.png`,
             link: "https://www.facebook.com/philippinespalestine/"
         },
         {
             title: "Pambansang Koalisyon ng Kababaihan sa Kanayunan",
             desc: "Empower rural women across 32 provinces to advance their advocacies for the Rural Women’s Agenda.",
-            img: "/img/PKKK.png",
+            img: `${import.meta.env.BASE_URL}img/PKKK.png`,
             link: "https://pkkk.org/"
         },
         {
             title: "ECPAT Philippines",
             desc: "Non-profit fighting child sexual exploitation through advocacy, research, and victim assistance.",
-            img: "/img/ECPAT.png",
+            img: `${import.meta.env.BASE_URL}img/ECPAT.png`,
             link: "https://ecpat.org.ph/"
         },
         {
             title: "For The Future: 88k Trees",
             desc: "Restoring ancestral land with the Yangil Tribe, planting native seedlings to restore ecosystems.",
-            img: "/img/ForTheFuture.png",
+            img: `${import.meta.env.BASE_URL}img/ForTheFuture.png`,
             link: "https://www.forthefuture.org.ph/"
         }
     ];

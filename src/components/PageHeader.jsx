@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PageHeader = ({ title, path }) => {
     return (
         <div className="page-header" style={{ 
-            backgroundImage: 'linear-gradient(rgba(32, 33, 43, 0.7), rgba(32, 33, 43, 0.7)), url(/img/page-header.jpg)',
+            backgroundImage: `linear-gradient(rgba(32, 33, 43, 0.7), rgba(32, 33, 43, 0.7)), url(${import.meta.env.BASE_URL}img/page-header.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             padding: '160px 0 90px 0',

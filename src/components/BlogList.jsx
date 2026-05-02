@@ -6,32 +6,32 @@ const BlogList = () => {
         {
             title: "Karapatan salutes Luis Teodoro, Staunch Human Rights Defender and Press Freedom Fighter",
             desc: "Karapatan sends its deepest condolences to the family, friends and colleagues of veteran journalist, human rights defender and staunch press freedom fighter Prof. Luis Teodoro.",
-            img: "/img/Prof.jpeg"
+            img: `${import.meta.env.BASE_URL}img/Prof.jpeg`
         },
         {
             title: "KARAPATAN on International Labor Day 2024",
             desc: "On International Labor Day 2024, KARAPATAN joins thousands of workers who marched to the streets to demand higher wages, job security and the recognition of their right to unionize.",
-            img: "/img/laborday.jpg"
+            img: `${import.meta.env.BASE_URL}img/laborday.jpg`
         },
         {
             title: "KARAPATAN supports jeepney drivers’ Transport Strike",
             desc: "KARAPATAN expresses its staunchest solidarity with the striking jeepney drivers and operators led by Piston who are airing their grievances.",
-            img: "/img/jeepneydriver.jpeg"
+            img: `${import.meta.env.BASE_URL}img/jeepneydriver.jpeg`
         },
         {
             title: "Rights group decries recent rights, IHL violations in Bukidnon",
             desc: "KARAPATAN condemns the series of grave violations of human rights and International Humanitarian Law (IHL) perpetrated by state forces in Bukidnon.",
-            img: "/img/IHL.jpeg"
+            img: `${import.meta.env.BASE_URL}img/IHL.jpeg`
         },
         {
             title: "KARAPATAN condemns Bombings, Military Operations in Abra and Ilocos Sur",
             desc: "KARAPATAN condemns the intensified military operations in the towns of Pilar, Abra and Sta. Maria, Ilocos Sur.",
-            img: "/img/Bomb.png"
+            img: `${import.meta.env.BASE_URL}img/Bomb.png`
         },
         {
             title: "Karapatan remembers Rene Saguisag",
             desc: "Karapatan extends its deepest condolences to the family, friends and colleagues of Atty. Rene Saguisag, who died on April 24, 2024.",
-            img: "/img/Rene.png"
+            img: `${import.meta.env.BASE_URL}img/Rene.png`
         }
     ];
 

@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const TeamSection = () => {
     const team = [
-        { name: "Cristina Palabay", role: "Secretary General", img: "/img/team2.png" },
-        { name: "Atty. Edre Olalia", role: "Legal Counsel", img: "/img/team1.png" },
-        { name: "Jigs Clamor", role: "Deputy Secretary General", img: "/img/team3.png" },
-        { name: "Atty. Maria Sol Taule", role: "Legal Counsel", img: "/img/team4.png" }
+        { name: "Cristina Palabay", role: "Secretary General", img: `${import.meta.env.BASE_URL}img/team2.png` },
+        { name: "Atty. Edre Olalia", role: "Legal Counsel", img: `${import.meta.env.BASE_URL}img/team1.png` },
+        { name: "Jigs Clamor", role: "Deputy Secretary General", img: `${import.meta.env.BASE_URL}img/team3.png` },
+        { name: "Atty. Maria Sol Taule", role: "Legal Counsel", img: `${import.meta.env.BASE_URL}img/team4.png` }
     ];
 
     return (

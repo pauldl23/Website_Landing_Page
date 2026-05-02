@@ -3,7 +3,7 @@ import React from 'react';
 const DonateSection = () => {
     return (
         <div className="container">
-            <div className="donate" data-parallax="scroll" data-image-src="/img/donate.jpg" style={{ backgroundImage: 'url(/img/donate.jpg)', backgroundSize: 'cover', backgroundAttachment: 'fixed', margin: '90px 0' }}>
+            <div className="donate" data-parallax="scroll" data-image-src={`${import.meta.env.BASE_URL}img/donate.jpg`} style={{ backgroundImage: `url(${import.meta.env.BASE_URL}img/donate.jpg)`, backgroundSize: 'cover', backgroundAttachment: 'fixed', margin: '90px 0' }}>
                 <div className="row align-items-center">
                     <div className="col-lg-7">
                         <div className="donate-content">

@@ -56,7 +56,7 @@ const Header = () => {
                             whileTap={{ scale: 0.95 }}
                             style={{ display: 'flex', alignItems: 'center', gap: '15px' }}
                         >
-                            <img src="/img/YellowLogoKarapatan.png" alt="Karapatan Logo" style={{ height: '50px', filter: 'drop-shadow(0 0 10px rgba(253, 190, 51, 0.3))' }} />
+                            <img src={`${import.meta.env.BASE_URL}img/YellowLogoKarapatan.png`} alt="Karapatan Logo" style={{ height: '50px', filter: 'drop-shadow(0 0 10px rgba(253, 190, 51, 0.3))' }} />
                             <span style={{ fontSize: '28px', fontWeight: '800', letterSpacing: '1px', color: '#fff' }}>
                                 KARAPATAN
                             </span>

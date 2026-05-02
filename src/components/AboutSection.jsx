@@ -13,7 +13,7 @@ const AboutSection = () => {
                         transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}
                         className="organic-blob" 
                         style={{ 
-                            backgroundImage: 'url(/img/about.jpg)', 
+                            backgroundImage: `url(${import.meta.env.BASE_URL}img/about.jpg)`, 
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center', 
                             height: '600px',

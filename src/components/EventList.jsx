@@ -7,19 +7,19 @@ const EventList = () => {
             title: "Statement at the Senate Committee on National Defense and Security hearing on red-tagging",
             desc: "Statement at the Senate Committee on National Defense and Security by Cristina Palabay, Karapatan Secretary General November 24, 2020.",
             date: "Nov 24, 2020",
-            img: "/img/freedom.jpg"
+            img: `${import.meta.env.BASE_URL}img/freedom.jpg`
         },
         {
             title: "Appeal for support for Mamanwa communities forcibly evacuated due to military operations",
             desc: "Dear friends and fellow rights advocates, Greetings! Military elements from the 30th and 38th IBPA have encamped in...",
             date: "March 23, 2012",
-            img: "/img/mamanwa1.jpg"
+            img: `${import.meta.env.BASE_URL}img/mamanwa1.jpg`
         },
         {
             title: "From defenders to victims: the plight HRDs in the Philippines amidst continuing impunity",
             desc: "(Paper presented by Atty. Edre U. Olalia, Secretary General of the National Union of Peoples’ Lawyers (NUPL) and Cristina E. Palabay.",
             date: "February 28, 2012",
-            img: "/img/NTF.jpg"
+            img: `${import.meta.env.BASE_URL}img/NTF.jpg`
         }
     ];
 

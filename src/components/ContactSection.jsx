@@ -9,7 +9,7 @@ const ContactSection = () => {
                     <h2>Contact for any query</h2>
                 </div>
                 <div className="contact-img">
-                    <img src="/img/Activist.jpg" alt="Image" />
+                    <img src={`${import.meta.env.BASE_URL}img/Activist.jpg`} alt="Image" />
                 </div>
                 <div className="contact-form">
                     <div id="success"></div>

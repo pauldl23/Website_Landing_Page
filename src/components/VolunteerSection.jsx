@@ -56,7 +56,7 @@ const VolunteerSection = () => {
                         transition={{ duration: 1 }}
                         className="organic-blob"
                         style={{ 
-                            backgroundImage: 'url(/img/volunteer.jpg)', 
+                            backgroundImage: `url(${import.meta.env.BASE_URL}img/volunteer.jpg)`, 
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center', 
                             height: '550px',

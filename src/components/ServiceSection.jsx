@@ -6,19 +6,19 @@ const ServiceSection = () => {
         {
             title: "Human Rights Advocacy",
             desc: "Efforts to promote and defend the fundamental rights and freedoms of individuals, including civil, political, economic, social, and cultural rights.",
-            icon: "/img/advocacy-icon.png",
+            icon: `${import.meta.env.BASE_URL}img/advocacy-icon.png`,
             isImg: true
         },
         {
             title: "Services Program",
             desc: "Provision of support and assistance to individuals and communities affected by human rights violations, including legal aid, counseling, and other essential services.",
-            icon: "/img/services.png",
+            icon: `${import.meta.env.BASE_URL}img/services.png`,
             isImg: true
         },
         {
             title: "Documentation and Research",
             desc: "Collection, analysis, and dissemination of information and data related to human rights violations and the overall human rights situation in the country, often used for advocacy, legal action, and policy development.",
-            icon: "/img/documentation.png",
+            icon: `${import.meta.env.BASE_URL}img/documentation.png`,
             isImg: true
         },
         {

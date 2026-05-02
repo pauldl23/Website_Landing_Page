@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+
 
 const Carousel = () => {
     const [videoSrc, setVideoSrc] = React.useState('');
@@ -45,17 +47,17 @@ const Carousel = () => {
         {
             h1: "Breaking down barriers that Divide Us",
             p: "We are more powerful together than apart, and we’ve never been more energized or more focused.",
-            img: "/img/Rally1.jpeg"
+            img: `${import.meta.env.BASE_URL}img/Rally1.jpeg`
         },
         {
             h1: "Making history is what we do!",
             p: "For it is in the actions of today that the chapters of tomorrow are written.",
-            img: "/img/BlackandWhiteRally.jpeg"
+            img: `${import.meta.env.BASE_URL}img/BlackandWhiteRally.jpeg`
         },
         {
             h1: "Your voice has never been more important",
             p: "Our strength reflects each individual's personal commitment to helping the community.",
-            img: "/img/WomenRally.jpeg"
+            img: `${import.meta.env.BASE_URL}img/WomenRally.jpeg`
         }
     ];
 
@@ -89,7 +91,7 @@ const Carousel = () => {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
                                 >
-                                    <a className="btn btn-custom" href="/donate">Donate Now</a>
+                                    <Link className="btn btn-custom" to="/donate">Donate Now</Link>
                                     <a className="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/KymtKllO1cc" data-target="#videoModal">Watch Video</a>
                                 </motion.div>
                             </div>

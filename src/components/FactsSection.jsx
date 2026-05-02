@@ -20,7 +20,7 @@ const FactsSection = () => {
 
     return (
         <div className="facts" style={{ 
-            backgroundImage: 'linear-gradient(rgba(32, 33, 43, 0.8), rgba(32, 33, 43, 0.8)), url(/img/facts.jpg)', 
+            backgroundImage: `linear-gradient(rgba(32, 33, 43, 0.8), rgba(32, 33, 43, 0.8)), url(${import.meta.env.BASE_URL}img/facts.jpg)`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed', 
